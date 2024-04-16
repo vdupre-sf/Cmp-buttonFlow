@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Button for Flow</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+			<property label="Flow API Name" name="flowName" type="String" />
+			<property label="Button label" name="buttonLabel" type="String" />
+			<property label="Pass recordId to your Flow ?" name="passRecordId" type="Boolean" default="false"/>
+			<property label="Flow Parameter Name" name="paramValue" type="String" default="recordId"/>
+			<property label="Header label" name="header" type="String" />
+			<property label="Display header ?" name="showHeader" type="Boolean" default="false"/>
+			<property label="Display footer ?" name="showFooter" type="Boolean" default="false"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
